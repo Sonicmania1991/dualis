@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Simple Site with Top Menu</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="bganimation.css" />
+    <script src="animation.js"></script>
+</head>
+<body>
+    <!-- background animation -->
+<div class="bg">
+  <div class="ball ball1"></div>
+  <div class="ball ball2"></div>
+  <div class="ball ball3"></div>
+  <div class="ball ball4"></div>
+  <div class="ball ball5"></div>
+  <div class="ball ball6"></div>
+</div>
+
+    <!-- main div for the login form-->
+    <div class="maindiv">
+        
+    <div class="logo"><img src="/pictures/logo/test.png" alt=""></div>
+    <div class="seconddiv">
+    <div class="login_register">
+        <button class="login-form-btn active">Bejelentkezés</button>
+        <button class="register-btn">Regisztráció</button>
+    </div>
+    
+    <div class="login-form active">
+        <!-- Login form content here -->
+         
+         <p>E-mail</p>
+        <input type="email" name="email" class="email form-input" placeholder="Email">
+        
+        <p>Password</p>
+        
+          <input type="password" name="password" class="password form-input" placeholder="Password">
+          <button type="button" class="toggle-password toggle-password-btn">Mutat</button>
+        <div class="password-options"><input type="checkbox" name="savepassword" class="savepassword"><label for="savepassword">Jelszó mentése</label> <a href="">Elfelejtett jelszó?</a></div>
+
+        <div class="otherStuffs">
+          <button class="login-btn submit-btn">Bejelentkezés</button>
+          
+          <div class="divider-row">
+            <hr>
+            <p>vagy</p>
+            <hr>
+          </div>
+          <button class="loginWithGoogle-btn submit-btn">Google</button>
+          <button class="loginWithApple-btn submit-btn">Apple</button>
+          
+        </div>
+            
+
+
+
+
+    </div>
+    
+    <div class="register-form">
+        <!-- Register form content here -->
+        <p>Teljes Név</p>
+        <input type="text" name="fullname" class="fullname form-input" placeholder="Teljes Név">
+        
+        <p>E-mail</p>
+        <input type="email" name="register-email" class="register-email form-input" placeholder="Email">
+        
+        <p>Jelszó</p>
+        <input type="password" name="register-password" class="register-password form-input" placeholder="Jelszó">
+        <button type="button" class="toggle-register-password toggle-password-btn">Mutat</button>
+        
+        <p>Jelszó megerősítés</p>
+        <input type="password" name="confirm-password" class="confirm-password form-input" placeholder="Jelszó megerősítés">
+        <button type="button" class="toggle-confirm-password toggle-password-btn">Mutat</button>
+        
+        <div class="register-options"><input type="checkbox" name="termsandconditions" class="termsandconditions"><label for="termsandconditions"><a href="">Elfogadom az adatkezelési és felhasználói Nyilatkozatot</a></label></div>
+
+        <div class="registerOtherStuffs">
+          <button class="register-submit-btn submit-btn">Regisztrálok</button>
+          
+          <div class="divider-row">
+            <hr>
+            <p>vagy</p>
+            <hr>
+          </div>
+          <button class="registerWithGoogle-btn submit-btn">Google</button>
+          <button class="registerWithApple-btn submit-btn">Apple</button>
+        </div>
+    </div>
+        </div>
+    
+    </div>
+</body>
+</html>

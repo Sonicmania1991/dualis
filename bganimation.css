@@ -1,0 +1,35 @@
+body {
+background: #0f172a;
+}
+
+.bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* Base style for all balls */
+.ball {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  filter: blur(18px);
+  opacity: 0.5;
+  mix-blend-mode: screen;
+
+  /* Start position controlled by CSS variables */
+  transform: translate(var(--x), var(--y));
+  transition: transform 6s ease-in-out; /* smooth movement */
+}
+
+/* Colors */
+.ball1 { background: radial-gradient(circle at 30% 30%, #f9a8d4, transparent 70%); }
+.ball2 { background: radial-gradient(circle at 0% 30%, #a5b4fc, transparent 70%); }
+.ball3 { background: radial-gradient(circle at 30% 30%, #6ee7b7, transparent 70%); }
+.ball4 { background: radial-gradient(circle at 30% 30%, #facc15, transparent 70%); }
+.ball5 { background: radial-gradient(circle at 30% 30%, #fa1515, transparent 70%); }
+.ball6 { background: radial-gradient(circle at 30% 30%, #b115fa, transparent 70%); }
+
